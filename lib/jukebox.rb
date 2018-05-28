@@ -49,13 +49,13 @@ def run(songs)
   input = gets.chomp
   loop do
     case input
-      when "help"
+      when "help" then
         help
-      when "list"
+      when "list" then
         list(songs)
-      when "play"
+      when "play" then
         play(songs)
-      when "exit"
+      when "exit" then
         exit_jukebox
         break
       else
