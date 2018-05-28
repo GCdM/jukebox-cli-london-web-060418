@@ -32,9 +32,9 @@ def play(songs)
   valid_num = Array.new(songs.length) {|i| (i + 1).to_s}
   
   if valid_num.include?(user_input)
-    puts "Playing #{user_input}"
+    puts "Playing ##{songs[user_input.to_i - 1]}"
   elsif songs.include?(user_input)
-    puts "Playing #{songs[user_input - 1]}"
+    puts "Playing "
   else
     puts "Invalid input, please try again"
   end
