@@ -28,8 +28,8 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  user_input = gets.to_i
-  input_num = user_input
+  user_input = gets.chomp
+  user_num = user_input.to_i
   songs_num = [1..songs.length]
   if songs_num.include?(user_input)
     puts "ANY MESSAGE!!!"
