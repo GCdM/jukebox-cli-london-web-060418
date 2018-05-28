@@ -32,7 +32,7 @@ def play(songs)
   valid_num = Array.new(songs.length) {|i| (i + 1).to_s}
   
   if valid_num.include?(user_input)
-    puts "ANY MESSAGE!!!"
+    puts "Playing #{user_input}"
   elsif songs.include?(user_input)
     puts "Playing #{user_input}"
   else
