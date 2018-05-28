@@ -48,6 +48,18 @@ def run
   puts "Please enter a command:"
   input = gets.chomp
   loop do
-    
+    case input
+      when "help"
+        help
+      when "list"
+        list
+      when "play"
+        play
+      when "exit"
+        exit_jukebox
+        break
+      else
+        "Invalid"
+    end
   end
 end
