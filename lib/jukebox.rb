@@ -29,8 +29,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
-  user_num = user_input.to_i
-  valid_num = Array.new(user_num)
+  valid_num = Array.new(user_input.to_i) {|i| i.to_s}
   if valid_num.include?(user_num)
     puts "ANY MESSAGE!!!"
   elsif songs.include?(user_input)
