@@ -34,7 +34,7 @@ def play(songs)
   if valid_num.include?(user_input)
     puts "Playing #{user_input}"
   elsif songs.include?(user_input)
-    puts "Playing #{user_input}"
+    puts "Playing #{songs[user_input - 1]}"
   else
     puts "Invalid input, please try again"
   end
